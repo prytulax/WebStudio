@@ -1,18 +1,71 @@
 :root {
-    --font-family: "Roboto", sans-serif;
-    --second-family: "Raleway", sans-serif;
-  }
-  .header{
-    text-align: center;
-  }
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+/* Шапка сайту */
+.header{
+  text-align: center;
+  width: 1600px;
+  height: 80px;
+}
+.logo{
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+.Web{
+  color: #2196f3;
+}
+.Studio{
+  color: #000000;
+}
+/* Навігаційний блок */
+.nav{
+  display: inline-flex;
+ 
+  margin-left: 78px;
+  padding-top: 32px;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+.menu-link{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #212121;
+}
+.menu-link:hover{
+  color: #2196f3;
+}
+/* Контакти */
+.header-contacts {
+  justify-content: flex-end;
+  display: inline-flex;
+  margin-left: 344px;
+  column-gap: 50px;
+  padding-top: 32px;
+}
 
-
-
-
-
+.header-contact-link{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+.header-contact-link:hover{
+  color: #2196F3;
+}
+/* Головна частина сайту */
   .main{
     text-align: center;
   }
+  /* Секція замовити послугу */
   .order{ 
     background-color: #2f303a;
     width: 1600px;
@@ -27,21 +80,133 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    flex-wrap: wrap;
+    display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 30px;
+   padding-top: 200px;
   }
   .order-button{
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 187%;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #fff;
-    text-align: center;
-    width: 216px;
-    height: 50px;
-    background-color: #2196F3;
-    border-radius: 5px;
-    border: none;
-    margin: 0 auto;
-  }
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  width: 216px;
+  height: 50px;
+  background-color: #2196F3;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+}
+/* Переваги  */
+
+.pros-list-item{
+  padding-top: 94px;
+}
+.pros-list-item-title{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.pros-list-item-text{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* Чим ми займаємось */
+.images-title{
+  padding-bottom: 49px;
+}
+.images-list {
+  display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 158px;
+}
+/* Команда */
+.workers{
+  width: 1600px;
+  height: 648px;
+  background: #f5f4fa;
+}
+.workers-title{
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+.workers-lists{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.workers-list{
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  width: 270px;
+  height: 368px;
+}
+.worker-img{
+  width: 270px;
+  height: auto;
+  padding-bottom: 30px;
+}
+.worker-name{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+.worker-text{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
+
+/* Кінець сайту */
+.footer{
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+.logo{
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  
+}
+.web{
+  color: #2196f3;
+}
+.f-studio{
+  color: #fff;
+}
+.address-text{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #fff;
+}
+.footer-contacts{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);  
+}
