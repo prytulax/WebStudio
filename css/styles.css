@@ -71,7 +71,8 @@ color: #757575;
 }
   /* Секція замовити послугу */
   .order{ 
-    background-color: #2f303a;
+    background: url(//images/people.jpg);
+    background:linear-gradient( rgba(47, 48, 58, 0.4)) ;
     width: 1600px;
     height: 600px;
   }
@@ -191,7 +192,58 @@ color: #757575;
   text-align: center;
   color: #757575;
 }
+/* Портфоліо */
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 215px;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding-bottom: 94px;
+}
 
+.gallery-filters{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.gallery-item-title{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.gallery-item-text{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.gallery-filter-button{
+  border-radius: 4px;
+  border: none;
+  width: 125px;
+  height: 38px;
+  background: #f5f4fa;
+}
+.gallery-item{
+  border: 1px solid #eee;
+  width: 370px;
+  height: 404px;
+}
 /* Кінець сайту */
 .footer{
   background-color: #2f303a;
