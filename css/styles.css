@@ -15,6 +15,7 @@ body{
   padding-bottom: 19px;
   width: 1600px;
   height: 80px;
+  border-bottom: 1px solid #757575;
 }
 .logo{
   font-family: var(--second-family);
@@ -65,16 +66,32 @@ font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: #757575;
+position: relative;
+padding-left: 10px;
+
+}
+.icon-envelope{
+  position: absolute;
+  left: 0;
+  top: auto;
+}
+.header-contact-link::before {
+  fill: #2196f3;
+   
 }
 .header-contact-link:hover{
   color: #2196F3;
 }
   /* Секція замовити послугу */
   .order{ 
-    background: url(//images/people.jpg);
-    background:linear-gradient( rgba(47, 48, 58, 0.4)) ;
+    /* background:linear-gradient( rgba(47, 48, 58, 0.4)) ; */
     width: 1600px;
     height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/people.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
   }
   .order-title{
     font-family: var(--font-family);
@@ -152,7 +169,7 @@ color: #757575;
 /* Команда */
 .workers{
   width: 1600px;
-  height: 648px;
+  height: 708px;
   background: #f5f4fa;
 }
 .workers-title{
@@ -169,8 +186,20 @@ color: #757575;
   background: #fff;
   border-radius: 0 0 4px 4px;
   width: 270px;
-  height: 368px;
+  height: 428px;
 }
+.workers-social-median{
+border-radius: 50%;
+width: 44px;
+height: 44px;
+fill: #AFB1B8;
+}
+.workers-social-median:hover{
+  border-radius: 50%;
+  background-color: #2196f3;
+  width: 44px;
+  height: 44px;
+  }
 .worker-img{
   width: 270px;
   height: auto;
@@ -243,6 +272,10 @@ color: #757575;
   border: 1px solid #eee;
   width: 370px;
   height: 404px;
+  
+}
+.gallery-items{
+  padding-left: 24px;
 }
 /* Кінець сайту */
 .footer{
@@ -252,6 +285,7 @@ color: #757575;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 217px;
+  text-decoration: none;
 }
 
 .logo{
