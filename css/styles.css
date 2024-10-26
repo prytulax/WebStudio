@@ -83,14 +83,9 @@ padding-left: 10px;
   color: #2196F3;
 }
   /* Секція замовити послугу */
-  .order{ 
-    /* background:linear-gradient( rgba(47, 48, 58, 0.4)) ; */
+  .order{
     width: 1600px;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/people.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
    
   }
   .order-title{
@@ -138,6 +133,12 @@ padding-left: 10px;
 .pros-list-item{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.pros-list-item::before{
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
 }
 .pros-list-item-title{
   font-family: var(--font-family);
