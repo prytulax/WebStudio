@@ -1,6 +1,7 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+  --main-bgc:
 }
 body{
     font-family: var(--font-family);
@@ -83,10 +84,10 @@ padding-left: 10px;
   color: #2196F3;
 }
   /* Секція замовити послугу */
-  .order{
+  .order,.container-order{
     width: 1600px;
     height: 600px;
-   
+    
   }
   .order-title{
     font-family: var(--font-family);
@@ -95,12 +96,9 @@ padding-left: 10px;
     line-height: 136%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
-    color: #fff;
+    color: #000000;
     display: flex;
    justify-content: space-evenly;
-   padding-bottom: 30px;
-   padding-top: 200px;
   }
   .order-button{
   font-family: var(--font-family);
@@ -178,12 +176,12 @@ padding-left: 10px;
   padding-top: 94px;
   text-align: center;
 }
-.workers-lists{
+.workers-list{
   display: flex;
   justify-content: center;
   column-gap: 30px;
 }
-.workers-list{
+.workers-list-item{
   background: #fff;
   border-radius: 0 0 4px 4px;
   width: 270px;
@@ -287,9 +285,11 @@ fill: #AFB1B8;
   padding-bottom: 60px;
   padding-left: 217px;
   text-decoration: none;
+
+}
+.footer-container{
   display: flex;
-    justify-content: space-between;
-    align-items: center;
+  gap: 70px;
 }
 
 .logo{
@@ -334,22 +334,77 @@ fill: #AFB1B8;
 .footer-contact-link:hover{
   color: #2196f3;
 }
-.footer-social, .footer-subscribe {
-  text-align: center;
-}
 
-.footer-social .social-icons a {
-  margin: 0 10px;
-}
 
+
+.social-text{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.social-icons{
+  display: flex;
+  gap: 10px;
+  padding-top: 20px; 
+}
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  background-color:  rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.social-link:hover{
+  background-color: #2196f3;
+}
 .social-icons img {
   width: 20px; 
   height: 20px;
 }
-
-.footer-subscribe input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 250px;
+.subs-text{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.form-container{
+  display: flex;
+  gap: 12px;
+}
+.subscribe-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+}
+.subscribe-button{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
