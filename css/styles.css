@@ -87,7 +87,7 @@ padding-left: 10px;
   .order,.container-order{
     width: 1600px;
     height: 600px;
-    
+    background-image: url(../images/people.jpg);
   }
   .order-title{
     font-family: var(--font-family);
@@ -96,9 +96,13 @@ padding-left: 10px;
     line-height: 136%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #000000;
-    display: flex;
-   justify-content: space-evenly;
+    color: #ffffff;
+    /* display: flex;
+   justify-content: space-evenly; */
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-top: 200px;
+    text-align: center;
   }
   .order-button{
   font-family: var(--font-family);
@@ -220,6 +224,17 @@ fill: #AFB1B8;
   text-align: center;
   color: #757575;
 }
+.social-worker{
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+}
+.s-work{
+  fill: #AFB1B8;
+}
+.s-work:hover{
+  fill: #ffffff;
+}
 /* Портфоліо */
 .gallery{
   display: flex;
@@ -261,11 +276,29 @@ fill: #AFB1B8;
   color: #757575;
 }
 .gallery-filter-button{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
   border-radius: 4px;
   border: none;
   width: 125px;
   height: 38px;
   background: #f5f4fa;
+}
+.gallery-filter-button:hover{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  background-color: #2196f3;
+
 }
 .gallery-item{
   border: 1px solid #eee;
@@ -297,7 +330,6 @@ fill: #AFB1B8;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  
 }
 .web{
   color: #2196f3;
@@ -407,4 +439,10 @@ fill: #AFB1B8;
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+.s-work{
+  fill: #AFB1B8;
+}
+.s-work:hover{
+  fill: #ffffff;
 }
