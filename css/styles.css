@@ -88,6 +88,10 @@ padding-left: 10px;
     width: 1600px;
     height: 600px;
     background-image: url(../images/people.jpg);
+    
+  }
+  .order::after{
+    background: linear-gradient(rgba(47, 48, 58, 0), #2f303a5d);
   }
   .order-title{
     font-family: var(--font-family);
