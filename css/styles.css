@@ -84,10 +84,13 @@ padding-left: 10px;
   color: #2196F3;
 }
   /* Секція замовити послугу */
-  .order,.container-order{
+  .order{
     width: 1600px;
     height: 600px;
     background-image: url(../images/people.jpg);
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-top: 200px;
     
   }
   .order::after{
@@ -103,9 +106,7 @@ padding-left: 10px;
     color: #ffffff;
     /* display: flex;
    justify-content: space-evenly; */
-    padding-left: 452px;
-    padding-right: 452px;
-    padding-top: 200px;
+    
     text-align: center;
   }
   .order-button{
@@ -164,7 +165,7 @@ padding-left: 10px;
 }
 /* Чим ми займаємось */
 .images-title{
-  padding-bottom: 49px;
+  margin-bottom: 49px;
   text-align: center;
 }
 .images-list {
@@ -370,9 +371,6 @@ fill: #AFB1B8;
 .footer-contact-link:hover{
   color: #2196f3;
 }
-
-
-
 .social-text{
   font-family: var(--font-family);
   font-weight: 700;
@@ -437,6 +435,15 @@ fill: #AFB1B8;
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #2196f3;
+}
+.subscribe-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.subscribe-text{
+  color: #fff;
 }
 .icon{
   display: flex;
